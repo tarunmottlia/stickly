@@ -1,0 +1,53 @@
+{
+  "name": "@stickly/widget",
+  "version": "0.1.0",
+  "description": "The Stickly rewards widget \u2014 a Preact + Shadow DOM bundle your users see. Reward GitHub stars, Discord joins, G2 reviews and referrals in your own product credits.",
+  "keywords": [
+    "stickly",
+    "rewards",
+    "referral",
+    "in-app-rewards",
+    "reward-widget",
+    "saas",
+    "product-led-growth",
+    "plg",
+    "user-engagement",
+    "retention",
+    "widget",
+    "embeddable-widget",
+    "javascript-widget",
+    "preact",
+    "shadow-dom",
+    "github-stars",
+    "discord",
+    "g2-reviews",
+    "product-hunt",
+    "credits"
+  ],
+  "license": "MIT",
+  "homepage": "https://stickly.live",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarunmottlia/stickly.git",
+    "directory": "packages/widget"
+  },
+  "bugs": "https://github.com/tarunmottlia/stickly/issues",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/w.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "preact": "^10.25.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

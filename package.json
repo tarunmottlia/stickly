@@ -1,0 +1,14 @@
+{
+  "name": "stickly-monorepo",
+  "private": true,
+  "description": "Stickly \u2014 drop-in rewards widget for SaaS. Open-source widget and server SDK.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @stickly/node && npm run build -w @stickly/widget",
+    "test": "npm run test -w @stickly/node",
+    "typecheck": "npm run typecheck -w @stickly/node && npm run typecheck -w @stickly/widget"
+  },
+  "license": "MIT"
+}

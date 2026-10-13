@@ -1,0 +1,66 @@
+{
+  "name": "@stickly/node",
+  "version": "0.1.0",
+  "description": "Verify Stickly reward webhooks and sign user identity tokens. Zero dependencies, for any Node server \u2014 Next.js, Express, Hono, Fastify, Remix.",
+  "keywords": [
+    "stickly",
+    "rewards",
+    "referral",
+    "referral-program",
+    "in-app-rewards",
+    "saas",
+    "product-led-growth",
+    "plg",
+    "user-engagement",
+    "retention",
+    "webhook",
+    "webhook-verification",
+    "hmac",
+    "jwt",
+    "credits",
+    "github-stars",
+    "discord",
+    "g2-reviews",
+    "product-hunt"
+  ],
+  "license": "MIT",
+  "homepage": "https://stickly.live",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarunmottlia/stickly.git",
+    "directory": "packages/node"
+  },
+  "bugs": "https://github.com/tarunmottlia/stickly/issues",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs && tsc -p tsconfig.json --emitDeclarationOnly",
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build && npm test",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

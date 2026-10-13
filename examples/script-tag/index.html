@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Host page — Stickly widget test</title>
+<style>
+  /* Deliberately aggressive host CSS. If any of it reaches the widget,
+     the shadow root is not doing its job. */
+  * { box-sizing: content-box !important; }
+  body { margin:0; font-family: Georgia, serif; background:#f4f1ea; color:#2a2a2a; }
+  button { background: hotpink !important; border: 4px dashed red !important;
+           font-size: 22px !important; padding: 20px !important; }
+  div { line-height: 3 !important; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+  h1 { font-size: 34px; margin:0 0 8px; }
+  p { color:#6b6459; }
+  code { background:#e8e3d8; padding:2px 6px; border-radius:4px; font-family: ui-monospace, monospace; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Your app</h1>
+    <p>A pretend host app. Its CSS sets <code>content-box</code> on everything,
+       makes every <code>button</code> hotpink with a dashed red border, and triples
+       every <code>div</code>'s line-height.</p>
+    <p>The widget below should be completely unaffected — and should leave this page alone too.</p>
+    <button>A host button, for comparison</button>
+  </div>
+
+  <!-- Replace with your own publishable key from app.stickly.live -->
+  <script src="https://cdn.stickly.live/w.js" data-key="pk_live_YOUR_KEY" async></script>
+  <script>
+    // Open it straight away so screenshots capture the panel, not the launcher.
+    const t = setInterval(() => { if (window.stk?.open) { window.stk.open(); clearInterval(t); } }, 100);
+  </script>
+</body>
+</html>
