@@ -12,7 +12,7 @@ tag, rewards granted by signed webhook to your own ledger.
 
 [stickly.live](https://stickly.live) · [Get a free key](https://app.stickly.live) · [Integration guide for agents](./AGENTS.md)
 
-<img src="docs/images/widget.png" alt="The Stickly widget: a list of rewards with credit values beside each one" width="420">
+<img src="docs/images/hero.png" alt="Stickly: turn user actions into growth — the dashboard and the rewards widget" width="900">
 
 </div>
 
@@ -34,6 +34,8 @@ your user clicks a reward  →  Stickly records the claim
                            →  signed webhook to your server
                            →  you credit your own ledger
 ```
+
+<img src="docs/images/widget.png" alt="The Stickly widget: a list of rewards with credit values beside each one" width="380">
 
 ## Install
 
@@ -206,7 +208,15 @@ compare for you, and `shouldGrant()` covers the last rule.
   address into a console and have it appear beside their claim.
 - Found something? Please email **tarun@gigzman.com** rather than opening a
   public issue.
-- Explore our primary org gigzman.com & other products as well : mantisai.in , lazyfounder.in , dhando.live , blogy.in 
+
+## Also from us
+
+Stickly is built by the team behind **[Gigzman](https://gigzman.com)**.
+
+- **[Mantis AI](https://mantisai.in)** — find local businesses that need a website
+- **[Dhando](https://dhando.live)** — get more genuine Google reviews, with one link
+- **[Blogy](https://blogy.in)** — automate your blogging in one click
+- **[Lazyfounder](https://lazyfounder.in)** — startup, funding and AI news for builders
 
 ## Contributing
 
