@@ -1,5 +1,5 @@
 /**
- * @stickly/node — the server half of a Stickly integration.
+ * @stickly-live/node — the server half of a Stickly integration.
  *
  * Two jobs, and both of them are the kind that look trivial and are not:
  * proving to Stickly which of your users is claiming, and proving to yourself

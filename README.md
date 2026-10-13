@@ -7,7 +7,7 @@ for starring your repo, joining your Discord, or leaving a G2 review — one scr
 tag, rewards granted by signed webhook to your own ledger.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![npm @stickly/node](https://img.shields.io/npm/v/@stickly/node?label=%40stickly%2Fnode)](https://www.npmjs.com/package/@stickly/node)
+[![npm @stickly-live/node](https://img.shields.io/npm/v/@stickly-live/node?label=%40stickly-live%2Fnode)](https://www.npmjs.com/package/@stickly-live/node)
 [![widget size](https://img.shields.io/badge/widget-16%20kB%20gzip-brightgreen)](./packages/widget)
 
 [stickly.live](https://stickly.live) · [Get a free key](https://app.stickly.live) · [Integration guide for agents](./AGENTS.md)
@@ -47,7 +47,7 @@ Then tell Stickly which of your users it is talking to, with a token you sign on
 your server:
 
 ```ts
-import { signUserToken } from '@stickly/node';
+import { signUserToken } from '@stickly-live/node';
 
 // server — an endpoint only a signed-in user can reach
 const token = signUserToken({ sub: user.opaqueId }, process.env.STICKLY_SIGNING_SECRET!);
@@ -62,7 +62,7 @@ window.stk.cmd.push(s => s.boot({ key: 'pk_live_…', token }));
 And grant the credits when the webhook arrives:
 
 ```ts
-import { verifyWebhook, shouldGrant } from '@stickly/node';
+import { verifyWebhook, shouldGrant } from '@stickly-live/node';
 
 export async function POST(req: Request) {
   const raw = await req.text();                       // raw bytes, not a parsed object
@@ -135,7 +135,7 @@ fails silently when you get it wrong.
 
 Both install the same widget. The script tag is the default.
 
-| | `<script>` tag | `@stickly/widget` |
+| | `<script>` tag | `@stickly-live/widget` |
 |---|---|---|
 | Install | one line of HTML | `npm i`, then import |
 | Updates | automatic, from the CDN | pinned to your deploy |
@@ -183,15 +183,15 @@ where `v1 = HMAC_SHA256("<t>.<rawBody>", STICKLY_WEBHOOK_SECRET)`.
 - **Ignore `mode: "test"` in production.** Test keys skip identity verification,
   so that `userId` is whatever the browser said it was.
 
-`@stickly/node` does the verification, the tolerance and the constant-time
+`@stickly-live/node` does the verification, the tolerance and the constant-time
 compare for you, and `shouldGrant()` covers the last rule.
 
 ## Packages
 
 | Package | What it is |
 |---|---|
-| [`@stickly/node`](./packages/node) | Webhook verification and token signing. Zero dependencies, ESM + CJS, typed. |
-| [`@stickly/widget`](./packages/widget) | The widget bundle itself — Preact in a shadow root, 16 kB gzip. |
+| [`@stickly-live/node`](./packages/node) | Webhook verification and token signing. Zero dependencies, ESM + CJS, typed. |
+| [`@stickly-live/widget`](./packages/widget) | The widget bundle itself — Preact in a shadow root, 16 kB gzip. |
 
 ## Security
 

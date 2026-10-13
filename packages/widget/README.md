@@ -1,4 +1,4 @@
-# @stickly/widget
+# @stickly-live/widget
 
 The [Stickly](https://stickly.live) rewards widget — Preact rendered into a
 shadow root, 16 kB gzipped. This is the same bundle served from

@@ -1,17 +1,17 @@
-# @stickly/node
+# @stickly-live/node
 
 Server-side helpers for [Stickly](https://stickly.live) — verify reward webhooks
 and sign the token that identifies your user. **Zero dependencies**; everything
 is `node:crypto`. ESM and CJS, fully typed.
 
 ```bash
-npm i @stickly/node
+npm i @stickly-live/node
 ```
 
 ## Verify a webhook
 
 ```ts
-import { verifyWebhook, shouldGrant } from '@stickly/node';
+import { verifyWebhook, shouldGrant } from '@stickly-live/node';
 
 const raw = await req.text();                 // RAW bytes — never a re-serialised object
 const event = verifyWebhook(raw, req.headers.get('x-stickly-signature'),
@@ -36,7 +36,7 @@ whatever the browser said it was.
 ## Sign a user token
 
 ```ts
-import { signUserToken } from '@stickly/node';
+import { signUserToken } from '@stickly-live/node';
 
 const token = signUserToken({ sub: user.opaqueId }, process.env.STICKLY_SIGNING_SECRET!);
 ```

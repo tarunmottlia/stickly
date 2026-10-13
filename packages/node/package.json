@@ -1,5 +1,5 @@
 {
-  "name": "@stickly/node",
+  "name": "@stickly-live/node",
   "version": "0.1.0",
   "description": "Verify Stickly reward webhooks and sign user identity tokens. Zero dependencies, for any Node server \u2014 Next.js, Express, Hono, Fastify, Remix.",
   "keywords": [

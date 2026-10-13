@@ -1,5 +1,5 @@
 {
-  "name": "@stickly/widget",
+  "name": "@stickly-live/widget",
   "version": "0.1.0",
   "description": "The Stickly rewards widget \u2014 a Preact + Shadow DOM bundle your users see. Reward GitHub stars, Discord joins, G2 reviews and referrals in your own product credits.",
   "keywords": [

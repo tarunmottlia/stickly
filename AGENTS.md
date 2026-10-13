@@ -10,7 +10,7 @@ stop and ask the developer: it needs something only a human with a browser can
 do, and carrying on with a placeholder is how an integration ends up looking
 finished and granting nothing.
 
-If you only take one thing from this file: **`npm i @stickly/node`** and use
+If you only take one thing from this file: **`npm i @stickly-live/node`** and use
 `verifyWebhook()` and `signUserToken()` rather than hand-rolling HMAC and JWT.
 Most of the steps below exist because people hand-rolled them.
 
