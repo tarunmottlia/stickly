@@ -204,8 +204,9 @@ compare for you, and `shouldGrant()` covers the last rule.
 - `name` and `email` are **optional** and display-only. They must travel in the
   signed token, never in `boot()` — otherwise any user could type a colleague's
   address into a console and have it appear beside their claim.
-- Found something? Please email **hello@stickly.live** rather than opening a
+- Found something? Please email **tarun@gigzman.com** rather than opening a
   public issue.
+- Explore our primary org gigzman.com & other products as well : mantisai.in , lazyfounder.in , dhando.live , blogy.in 
 
 ## Contributing
 
