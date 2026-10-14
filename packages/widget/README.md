@@ -38,3 +38,9 @@ npm install && npm run build   # -> dist/w.js
 ```
 
 MIT · [source](https://github.com/tarunmottlia/stickly/tree/main/packages/widget)
+
+---
+
+Built by the team behind **[Gigzman](https://gigzman.com)**.
+Get your keys at **[app.stickly.live](https://app.stickly.live)** · [stickly.live](https://stickly.live)
+

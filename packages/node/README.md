@@ -57,3 +57,9 @@ The two secrets are easy to swap. Go by the prefix: anything with one is the
 **signing** secret; a bare hex string is the **webhook** secret.
 
 MIT · [source](https://github.com/tarunmottlia/stickly/tree/main/packages/node)
+
+---
+
+Built by the team behind **[Gigzman](https://gigzman.com)**.
+Get your keys at **[app.stickly.live](https://app.stickly.live)** · [stickly.live](https://stickly.live)
+
