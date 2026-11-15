@@ -195,6 +195,12 @@ compare for you, and `shouldGrant()` covers the last rule.
 | [`@stickly-live/node`](./packages/node) | Webhook verification and token signing. Zero dependencies, ESM + CJS, typed. |
 | [`@stickly-live/widget`](./packages/widget) | The widget bundle itself — Preact in a shadow root, 16 kB gzip. |
 
+## Examples
+
+| Example | What it shows |
+|---|---|
+| [`stickly-nextjs-example`](https://github.com/tarunmottlia/stickly-nextjs-example) | Next.js App Router + Auth.js: the widget for signed-in users only, a server-signed user token, and a webhook route that grants credits once per event id. |
+
 ## Security
 
 - Secrets are **server-side only**. `STICKLY_SIGNING_SECRET` and
