@@ -201,6 +201,11 @@ compare for you, and `shouldGrant()` covers the last rule.
 |---|---|
 | [`stickly-nextjs-example`](https://github.com/tarunmottlia/stickly-nextjs-example) | Next.js App Router + Auth.js: the widget for signed-in users only, a server-signed user token, and a webhook route that grants credits once per event id. |
 
+## Docs
+
+- [Choosing referral program software by payout model: cash, per-referral or product credits](./docs/index.md)
+- [Before you reward a user action: a platform-rules lookup for in-app credits](./docs/reward-actions-platform-rules.md)
+
 ## Security
 
 - Secrets are **server-side only**. `STICKLY_SIGNING_SECRET` and
